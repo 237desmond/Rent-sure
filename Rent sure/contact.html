@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R Sure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/sign-up1.png" type="image/x-icon" >
+    <!-- email script -->
+    <script src="index.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "2EwAXu_Qxfy4Vyolh",
+      });
+   })();
+</script>
+</head>
+<body>
+    <header>
+        <div class="nav container">
+           <!--logo-->
+            <a href="index.html" class="logo"><i class='bx bx-home'></i>R Sure</a>
+            <!--Menu icon-->
+           <!-- <input type="checkbox" name="" id="menu"> -->
+           <!-- <label for="Menu"><i class='bx bx-menu' id="menu-icon"></i></label> -->
+          
+              <!--log in button-->
+              <a href="Login.html" class="btn">Log In </a>
+  
+        </div>  
+        <!-- <div class="image">
+          <img src="image/contact.jpg" alt="" style="width: 800px; float: right; background-image: url(image/contact.jpg);">
+        </div> -->
+       
+      </header>
+      <!-- <div class="image">
+        <img src="image/contact1.png" alt="" style="">
+      </div> -->
+     
+      <div class="login container"> 
+        <div class="login-container">
+          <h2>Feel Free To Ask Any Questions</h2>
+          <form action="https://formsubmit.co/surerent9@gmail.com" method="POST"> 
+            <!-- <input type="hidden" name="access_key" value="8176f53e-e7d7-4d3f-82de-44ab75ccfa5c"> -->
+            <input type="text" name="name" id="name" placeholder=" Your Full Name" required>
+            <input type="email" name="email" id="email" placeholder="yourmail@.gmailcom" required>
+           <input type="text" name="Message" id="message" placeholder="Message" class="Message" required>
+            <button class="button" type="submit">submit</button>
+           
+          </form>
+         
+        </div>
+        <!-- <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+          function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "surerent9@gmail.com",
+    Password : "Family_001",
+    To : 'surerent9@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New contact Form enquiry",
+    Body : "Name:" + document.getElementById("name").value
+    + " <br> Email:" + document.getElementById("email").value
+    + " <br> Message:" + document.getElementById("message").value
+}).then(
+  message => alert("message sent succesfully")
+);
+          } -->
+
+       
+</body>
+</html>
